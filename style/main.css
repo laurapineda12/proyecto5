@@ -1,0 +1,184 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+nav{
+  width: 100%;
+  background-color: rgb(23, 109, 136);
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+}
+a{
+  padding: 20px 30px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+}
+nav ul li a:hover{
+  border-bottom: solid white 4px;
+  box-sizing: border-box;
+  background-color: rgb(83, 145, 227);
+  border: solid white;
+}
+.ma{
+  border-bottom: solid white 4px;
+  background-color: rgb(83, 145, 227);
+}
+h3{
+  background-color: rgb(198, 224, 35);
+  width: 100%;
+  height: 50px;
+  text-align:center;
+  font-size: 40px;
+  padding: 40px 0px;
+}
+.eje1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 250px 150px;
+  background-color: rgba(128, 121, 103, 0);
+  width: 400px;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+}
+.eje1>img,.eje2>img{
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+.eje1:hover>img,.eje2:hover>img{
+  transform: scale(1);
+  overflow: hidden;
+}
+.eje1>article,.eje2>article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(196, 93, 178,0.4);
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition-duration: 0s;
+}
+.eje1:hover>article,.eje2:hover>article{
+transform: scale(1);
+transition-duration: .5s;
+
+}
+.eje1>article>h4,.eje2>article>h4{
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  transform: scale(0);
+  transition-duration: 0.5s;
+  transition-delay: .6s;
+  overflow: hidden;
+}
+.eje1:hover>article>h4,.eje2:hover>article>h4{
+  transform: scale(1);
+}
+.eje1>article>p,.eje2>article>p{
+  text-align: justify;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Amatic SC', cursive;
+  transform: scale(0);
+  transition-duration: 0.5s;
+  transition-delay: .6s;
+}
+.eje1:hover>article>p,.eje2:hover>article>p{
+  transform: scale(1);
+}
+.eje1>article>a,.eje2>article>a{
+margin: 0px 150px;
+background-color: rgb(71, 132, 189);
+padding: 0;
+transform: scale(0);
+transition-duration: .5s;
+transition-delay: .6s;
+}
+.eje1:hover>article>a,.eje2:hover>article>a{
+  transform: scale(1);
+}
+.eje2{
+  position: absolute;
+  left: 800px;
+  top: 0px;
+  right: 20px;
+  bottom: 0px;
+  margin: 250px 0;
+  background-color: rgba(128, 121, 103, 0);
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.eje3{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 250px 150px;
+  background-color: rgba(128, 121, 103, 0);
+  width: 400px;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+}
+.eje3>article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 187, 240,0.4);
+}
+.eje3>article>h4{
+  text-align: center;
+  font-size: 35px;
+  color:  rgb(189, 89, 167);
+  padding:20px 20px 0px;
+}
+.eje3>article>p{
+  text-align: justify;
+  padding: 10px 15px;
+  font-size: 20px;
+  transform: translate(-150px);
+}
+.eje4:hover>article>p{
+
+}
+.eje3>article>a{
+  margin: 0px 150px;
+  padding: 0;
+  background-color: rgb(189, 89, 167);
+  transform: translatey(120px);
+  transition-duration: .5s;
+}
+.eje3:hover>article>a{
+  transform: translate(0px);
+}
+.eje4{
+  position: absolute;
+  left: 800px;
+  top: 0px;
+  right: 20px;
+  bottom: 0px;
+  margin: 250px 0;
+  background-color: rgba(128, 121, 103, 0);
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border: solid red 5px;
+}
