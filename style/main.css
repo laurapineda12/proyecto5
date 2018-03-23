@@ -107,6 +107,7 @@ padding: 0;
 transform: scale(0);
 transition-duration: .5s;
 transition-delay: .6s;
+font-family: 'Anton', sans-serif;
 }
 .eje1:hover>article>a,.eje2:hover>article>a{
   transform: scale(1);
@@ -123,7 +124,7 @@ transition-delay: .6s;
   height: 300px;
   overflow: hidden;
 }
-.eje3{
+.eje3,.eje6{
   position: absolute;
   left: 0px;
   top: 0px;
@@ -135,41 +136,58 @@ transition-delay: .6s;
   height: 300px;
   float: left;
   overflow: hidden;
+
 }
-.eje3>article{
+.eje3>article,.eje4>article{
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
   background-color: rgba(64, 187, 240,0.4);
+  transform: rotate(90deg) translate(350px ,-350px);
+  transition-duration: .5s;
 }
-.eje3>article>h4{
+.eje3:hover>article,.eje4:hover>article{
+  transform: rotate(0deg) translate(0px);
+}
+.eje3>article>h4,.eje4>article>h4{
   text-align: center;
   font-size: 35px;
   color:  rgb(189, 89, 167);
   padding:20px 20px 0px;
+  transform: translate(280px,-60px);
+  transition-duration: .5s;
+  transition-delay: 1s;
 }
-.eje3>article>p{
+.eje3:hover>article>h4,.eje4:hover>article>h4{
+  transform: translate(0px);
+}
+.eje3>article>p,.eje4>article>p{
   text-align: justify;
   padding: 10px 15px;
   font-size: 20px;
-  transform: translate(-150px);
+  transform: translate(-700px,-390px);
+  transition-duration: .5s;
+  transition-delay: 1s;
 }
-.eje4:hover>article>p{
-
+.eje3:hover>article>p,.eje4:hover>article>p{
+  transform: translateX(0px);
+  transform: translateY(0px);
 }
-.eje3>article>a{
+.eje3>article>a,.eje4>article>a{
   margin: 0px 150px;
   padding: 0;
   background-color: rgb(189, 89, 167);
-  transform: translatey(120px);
+  transform: translatey(160px);
   transition-duration: .5s;
+  transition-delay:1s;
+  font-family: 'Anton', sans-serif;
 }
-.eje3:hover>article>a{
+.eje3:hover>article>a,.eje4:hover>article>a{
   transform: translate(0px);
 }
-.eje4{
+.eje4,.eje5{
   position: absolute;
   left: 800px;
   top: 0px;
@@ -179,6 +197,33 @@ transition-delay: .6s;
   background-color: rgba(128, 121, 103, 0);
   width: 400px;
   height: 300px;
-  overflow: hidden;
-  border: solid red 5px;
+  
+}
+.eje5>article,.eje6>article{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(249, 188, 149,0.4);
+}
+.eje6>article>h4,.eje5>article>h4{
+  text-align: center;
+  font-size: 35px;
+  color: rgb(25, 85, 215);
+  padding: 20px 20px 0px;
+  transform: rotate(90deg) translate(-50px ,200px);
+}
+.eje6>article>p,.eje5>article>p{
+  font-size: 20px;
+  text-align: justify;
+  padding: 10px 15px;
+}
+.eje6>article>a,.eje5>article>a{
+  margin: 0px 150px;
+  background-color: white;
+  font-size: 20px;
+  color: rgb(28, 28, 24);
+  padding: 0;
 }
