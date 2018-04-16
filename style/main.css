@@ -57,7 +57,6 @@ h3{
 }
 .eje1:hover>img,.eje2:hover>img{
   transform: scale(1);
-  overflow: hidden;
 }
 .eje1>article,.eje2>article{
   position: absolute;
@@ -124,7 +123,7 @@ font-family: 'Anton', sans-serif;
   height: 300px;
   overflow: hidden;
 }
-.eje3,.eje6{
+.eje3,.eje6,.eje7{
   position: absolute;
   left: 0px;
   top: 0px;
@@ -136,7 +135,6 @@ font-family: 'Anton', sans-serif;
   height: 300px;
   float: left;
   overflow: hidden;
-
 }
 .eje3>article,.eje4>article{
   position: absolute;
@@ -167,7 +165,7 @@ font-family: 'Anton', sans-serif;
   text-align: justify;
   padding: 10px 15px;
   font-size: 20px;
-  transform: translate(-700px,-390px);
+  transform: translate(-500px,650px);
   transition-duration: .5s;
   transition-delay: 1s;
 }
@@ -187,7 +185,7 @@ font-family: 'Anton', sans-serif;
 .eje3:hover>article>a,.eje4:hover>article>a{
   transform: translate(0px);
 }
-.eje4,.eje5{
+.eje4,.eje5,.eje8{
   position: absolute;
   left: 800px;
   top: 0px;
@@ -197,7 +195,8 @@ font-family: 'Anton', sans-serif;
   background-color: rgba(128, 121, 103, 0);
   width: 400px;
   height: 300px;
-  
+  overflow:hidden;
+
 }
 .eje5>article,.eje6>article{
   position: absolute;
@@ -207,18 +206,34 @@ font-family: 'Anton', sans-serif;
   width: 100%;
   height: 100%;
   background-color: rgba(249, 188, 149,0.4);
+  transform: rotate(90deg)translate(-350px ,-350px);
+  transition-duration: .5s;
+}
+.eje5:hover>article,.eje6:hover>article{
+ transform: rotate(0deg) translate(0px);
 }
 .eje6>article>h4,.eje5>article>h4{
   text-align: center;
   font-size: 35px;
   color: rgb(25, 85, 215);
   padding: 20px 20px 0px;
-  transform: rotate(90deg) translate(-50px ,200px);
+  transform: rotate(-90deg) translate(150px ,-200px);
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+}
+.eje6:hover>article>h4,.eje5:hover>article>h4{
+transform: rotate(0deg) translate(0px);
 }
 .eje6>article>p,.eje5>article>p{
   font-size: 20px;
   text-align: justify;
   padding: 10px 15px;
+  transform: rotate(90deg) translate(-200px ,-280px);
+  transition-duration: 0.5s;
+  transition-delay: 0.6s;
+}
+.eje6:hover>article>p,.eje5:hover>article>p{
+transform: rotate(0deg) translate(0px);
 }
 .eje6>article>a,.eje5>article>a{
   margin: 0px 150px;
@@ -226,4 +241,67 @@ font-family: 'Anton', sans-serif;
   font-size: 20px;
   color: rgb(28, 28, 24);
   padding: 0;
+  transform: rotate(90deg) translate(-200px ,-235px);
+  transition-duration: 0.5s;
+  transition-delay: 0.6s;
+}
+.eje6:hover>article>a,.eje5:hover>article>a{
+ transform: rotate(0deg) translate(0px);
+}
+.eje5>img,.eje6>img{
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+}
+.eje5:hover>img,.eje6:hover>img{
+  transform: scale(1);
+  overflow: hidden;
+}
+.eje7>article,.eje8>article{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 185, 54,0.3);
+  transform: scale(0) rotate(700deg);
+  transition-duration: 0.8s;
+}
+.eje7:hover>article,.eje8:hover>article{
+  transform: scale(1) rotate(0deg);
+}
+.eje7>article>h4,.eje8>article>h4{
+  text-align: center;
+  font-size: 30px;
+  color: purple;
+  transform: translatex(600px);
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+}
+.eje7:hover>article>h4,.eje8:hover>article>h4{
+  transform: translatey(0);
+}
+.eje7>article>p,.eje8>article>p{
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+  transform: translatex(-600px);
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+}
+.eje7:hover>article>p,.eje8:hover>article>p{
+  transform: translate(0);
+}
+.eje7>article>a,.eje8>article>a{
+  text-align: center;
+  font-size: 40px;
+  margin: 0px 100px;
+  color: purple;
+  transform: translatey(400px);
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+}
+.eje7:hover>article>a,.eje8:hover>article>a{
+  transform: translate(0);
 }
